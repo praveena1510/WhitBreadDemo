@@ -1,0 +1,13 @@
+[
+  {
+    "useCase": 1,
+    "description": "No delete customer",
+    "rq": {
+      "deleteEmail": ""
+    },
+    "rs": {
+      "statusCode": 403,
+      "errorMessage": "Missing Authentication Token"
+    }
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "useCase": 1,
+    "description": "Delete customer",
+    "rq": {
+      "email": "erase@gmail.com",
+      "firstName": "erase1",
+      "lastName": "sur1",
+      "title": "miss",
+      "password":  "a2q4y4Qu"
+    },
+    "rs": {
+      "statusCode": 200
+    }
+  }
+]

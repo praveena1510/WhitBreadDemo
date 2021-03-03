@@ -1,0 +1,13 @@
+[
+  {
+    "useCase": 1,
+    "description": "No fetch customer",
+    "rq": {
+      "fetchEmail": ""
+    },
+    "rs": {
+      "statusCode": 403,
+      "errorMessage": "Missing Authentication Token"
+    }
+  }
+]

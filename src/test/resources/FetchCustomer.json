@@ -1,0 +1,16 @@
+[
+  {
+    "useCase": 1,
+    "description": "Fetch customer",
+    "rq": {
+      "email": "get1@gmail.com",
+      "firstName": "get1",
+      "lastName": "sur1",
+      "title": "miss",
+      "password":  "a2q4y4Qu"
+    },
+    "rs": {
+      "statusCode": 200
+    }
+  }
+]

@@ -1,0 +1,99 @@
+[
+  {
+    "useCase": 1,
+    "description": "Create customer without email",
+    "rq": {
+      "email": "",
+      "firstName": "test1",
+      "lastName": "last1",
+      "title": "miss",
+      "password":  "a2q4y4Qu"
+    },
+    "rs": {
+      "statusCode": 200,
+      "error": true,
+      "errorMessage": "Missing mandatory data"
+    }
+  },
+  {
+    "useCase": 2,
+    "description": "Create customer without firstName",
+    "rq": {
+      "email": "test2@gmail.com",
+      "firstName": null,
+      "lastName": "last2",
+      "title": "miss",
+      "password":  "a2q4y4Qu"
+    },
+    "rs": {
+      "statusCode": 200,
+      "error": true,
+      "errorMessage": "Missing mandatory data"
+    }
+  },
+  {
+    "useCase": 3,
+    "description": "Create customer without lastName",
+    "rq": {
+      "email": "test3@gmail.com",
+      "firstName": "test3",
+      "lastName": null,
+      "title": "mr",
+      "password":  "a2q4y4Qu"
+    },
+    "rs": {
+      "statusCode": 200,
+      "error": true,
+      "errorMessage": "Missing mandatory data"
+    }
+  },
+  {
+    "useCase": 4,
+    "description": "Create customer with special characters in email",
+    "rq": {
+      "email": "test$4@gmail.com",
+      "firstName": "test4",
+      "lastName": "last4",
+      "title": "mr",
+      "password":  "a2q4y4Qu"
+    },
+    "rs": {
+      "statusCode": 200,
+      "error": true,
+      "errorMessage": "Error! Database insertion crashed, looks like we have a bug here"
+    }
+  },
+  {
+    "useCase": 5,
+    "description": "Create customer with no password",
+    "rq": {
+      "email": "test$4@gmail.com",
+      "firstName": "test4",
+      "lastName": "last4",
+      "title": "mr",
+      "password": null
+    },
+    "rs": {
+      "statusCode": 200,
+      "error": true,
+      "errorMessage": "Error! Database insertion crashed, looks like we have a bug here"
+    }
+  },
+
+  {
+    "useCase": 6,
+    "description": "Create customer with wrong password (abc)",
+    "rq": {
+      "email": "test$4@gmail.com",
+      "firstName": "test4",
+      "lastName": "last4",
+      "title": "mr",
+      "password": "abc"
+    },
+    "rs": {
+      "statusCode": 200,
+      "error": true,
+      "errorMessage": "Error! Database insertion crashed, looks like we have a bug here"
+    }
+  }
+]

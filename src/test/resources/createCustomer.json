@@ -1,0 +1,30 @@
+[
+  {
+    "useCase": 1,
+    "description": "Create customer",
+    "rq": {
+      "email": "test1@gmail.com",
+      "firstName": "test1",
+      "lastName": "last1",
+      "title": "miss",
+      "password":  "a2q4y4Qu"
+    },
+    "rs": {
+      "statusCode": 200
+    }
+  },
+  {
+    "useCase": 2,
+    "description": "Create customer with title (null)",
+    "rq": {
+      "email": "test3@gmail.com",
+      "firstName": "test3",
+      "lastName": "last3",
+      "title": null,
+      "password":  "a2q4y4Qu"
+    },
+    "rs": {
+      "statusCode": 200
+    }
+  }
+]
